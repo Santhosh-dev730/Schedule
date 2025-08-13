@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="icon" href="TEQ LOGO-01.png">
+<style>
+    *
+     {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+    body
+     {
+        height: 100vh;
+        background: linear-gradient(-45deg, #4facfe, #ffb347, #a8e6cf, #4facfe);
+        background-size: 400% 400%;
+        animation: gradients 10s ease infinite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @keyframes gradients
+     {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    .container
+     {
+        display: flex;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(15px);
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        max-width: 900px;
+        width: 100%;
+    }
+    .form-box
+     {
+        flex: 1;
+        padding: 40px;
+        color: #fff;
+    }
+    .form-box h2 
+    {
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+    .form-box p
+     {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .form-box input
+     {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+    }
+    .form-box .btn 
+    {
+        width: 100%;
+        padding: 12px;
+        background: #fff;
+        color: #333;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    .form-box .btn:hover
+     {
+        background: #f1f1f1;
+    }
+    .illustration 
+    {
+        flex: 1;
+        background: rgba(255, 255, 255, 0.15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .illustration img
+     {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 0 25px rgba(255, 255, 255, 0.6),0 0 40px rgba(79, 172, 254, 0.5),0 0 60px rgba(255, 179, 71, 0.4), 0 0 80px rgba(168, 230, 207, 0.3);
+        animation: glow 5s ease-in-out infinite alternate;
+    }
+    @keyframes glow
+     {
+        0%
+         {
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.6),0 0 40px rgba(79, 172, 254, 0.5),0 0 60px rgba(255, 179, 71, 0.4),0 0 80px rgba(168, 230, 207, 0.3);
+        }
+        100% 
+        {
+            box-shadow: 0 0 35px rgba(255, 255, 255, 0.8),0 0 50px rgba(79, 172, 254, 0.7),0 0 70px rgba(255, 179, 71, 0.6),0 0 90px rgba(168, 230, 207, 0.5);
+        }
+    }
+    @media (max-width: 768px) 
+    {
+        .container 
+        {
+            flex-direction: row;
+        }
+        .illustration
+         {
+            height: 250px;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="form-box">
+     
+        <p>Please login to your account</p>
+        <input type="email" placeholder="Email Address">
+        <input type="password" placeholder="Password">
+        <button class="btn">Sign In</button>
+    </div>
+    <div class="illustration">
+        <img src="login.webp" >
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Navigation with Logo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      background-color: #333;
+      padding: 10px 20px;
+    }
+
+    .navbar img {
+      height: 40px;
+      margin-right: 20px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      margin-right: 10px;
+      transition: background 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #575757;
+      border-radius: 5px;
+    }
+
+    .navbar a.active {
+      background-color: #04AA6D;
+      border-radius: 5px;
+    }
+    .move{
+        position: relative;
+        left: 800px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <img src="TEQ_LOGO-01[1].png" alt="Logo" />
+    <a href="index.html" class="active">Home</a>
+    <a href="trainers.html">Trainers</a>
+    <a href="" class="move">+ Add Trainers</a>
+  </nav>
+
+  <div style="padding: 20px;">
+   
+  </div>
+
+</body>
+</html>
